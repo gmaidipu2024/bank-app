@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Money</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+
+<section>
+    <p>cashout Your Money</p>
+    <div>
+        <h1> $ <span id="mail-blance">5000</span></h1>
+    </div>
+    <p class="text-xs mb-4"> Type you Account Number </p>
+
+    <input  value="01822471251" id="Account" type="number" placeholder=" Account ">
+
+    <p>Type Your pin </p>
+
+    <input value="1234"  id="myPin" type="text" placeholder=" Pin "> 
+    
+
+    <p>Amount</p>
+    <input class="mb-2"  id="cash-Amount" type="text" placeholder=" Account ">
+    <br/>
+
+    <button  id="cashOut">Cash Out Money </button>
+</section>
+    
+
+    <script src="./cashOut.js"></script>
+</body>
+</html>
