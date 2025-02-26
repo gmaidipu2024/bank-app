@@ -1,3 +1,17 @@
+document.getElementById("cashOut-box").style.display= 'none';
+
+document.getElementById("admoneybtn").addEventListener("click",function(){
+    document.getElementById("cashOut-box").style.display= 'none';
+    document.getElementById("addMoney-box").style.display= 'block';
+})
+
+
+document.getElementById("cashOutbtn").addEventListener("click",function(){
+    document.getElementById("cashOut-box").style.display= 'block';
+    document.getElementById("addMoney-box").style.display= 'none';
+})
+
+
 document.getElementById("AddMoney").addEventListener("click", function(){
     
     const amount = document.getElementById("amount").value;

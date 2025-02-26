@@ -1,5 +1,5 @@
 
-document.getElementById("AddButton").addEventListener("click", function(event){
+document.getElementById("loginButton").addEventListener("click", function(event){
 
     event.preventDefault();
 

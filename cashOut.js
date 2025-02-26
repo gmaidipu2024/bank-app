@@ -1,4 +1,5 @@
-document.getElementById("cashOut").addEventListener("click", function(){
+document.getElementById("cashOut").addEventListener("click", function(e){
+    e.preventDefault();
     
     const accountNumber = document.getElementById("Account").value;
 
@@ -8,7 +9,7 @@ document.getElementById("cashOut").addEventListener("click", function(){
     const cashAmount= document.getElementById ("cash-Amount").value;
     const ChangeCashAmount= parseInt(cashAmount);
 
-    const mainBalance= document.getElementById("mail-blance").innerText
+    const mainBalance= document.getElementById("main-blance2").innerText
         const valueChange = parseInt(mainBalance);
    
     if (accountNumber.length === 11) {
@@ -16,7 +17,7 @@ document.getElementById("cashOut").addEventListener("click", function(){
         if (changePinValue === 1234) {
 
             const sum = valueChange-ChangeCashAmount
-            document.getElementById("mail-blance").innerText = sum;
+            document.getElementById("main-blance2").innerText = sum;
             
         } else{
             alert("Pin Number Vull")

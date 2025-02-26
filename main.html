@@ -12,7 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-<section>
+    <section>
+        <button id="admoneybtn" class="py-4 px-4 bg-slate-700 text-white mt-2 rounded-md ml-8"> AddMoney</button>
+        <button id="cashOutbtn" class="py-4 px-4 bg-slate-700 text-white mt-2 rounded-md ml-2"> CashoutMoney</button>
+    </section>
+
+<section id="addMoney-box">
     <div>
         <h1> $ <span id="mail-blance">5000</span></h1>
     </div>
@@ -33,7 +38,30 @@
 </section>
 
 
+<section id="cashOut-box">
+    <p>cashout Your Money</p>
+    <div>
+        <h1> $ <span id="main-blance2">5000</span></h1>
+    </div>
+    <p class="text-xs mb-4"> Type you Account Number </p>
 
+    <input  value="01822471251" id="Account" type="number" placeholder=" Account ">
+
+    <p>Type Your pin </p>
+
+    <input value="1234"  id="myPin" type="text" placeholder=" Pin "> 
+    
+
+    <p>Amount</p>
+    <input class="mb-2"  id="cash-Amount" type="text" placeholder=" Account ">
+    <br/>
+
+    <button  id="cashOut">Cash Out Money </button>
+</section>
+
+   
     <script src="./addMoney.js"></script>
+    <script src="./cashOut.js"></script>
+
 </body>
 </html>
