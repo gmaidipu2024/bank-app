@@ -15,11 +15,11 @@ document.getElementById("loginButton").addEventListener("click", function(event)
             window.location.href ="./main.html"
             
         }else{
-            alert("pin Thik nai")
+            alert("Enter Your Pin : 1234")
         }
         
     }else{
-        alert("entar valid number")
+        alert("entar must be 11 degit Number")
     }
     
     

@@ -30,6 +30,6 @@ document.getElementById("AddMoney").addEventListener("click", function(){
          document.getElementById("mail-blance").innerText = sum;
             
         }else{
-            alert("pin Thik nai")
+            alert("Enter Your Pin")
         }
 })

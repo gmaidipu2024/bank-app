@@ -12,51 +12,54 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <section>
-        <button id="admoneybtn" class="py-4 px-4 bg-slate-700 text-white mt-2 rounded-md ml-8"> AddMoney</button>
-        <button id="cashOutbtn" class="py-4 px-4 bg-slate-700 text-white mt-2 rounded-md ml-2"> CashoutMoney</button>
+    <section class="ml-8 mt-5">
+        <button id="admoneybtn" class="py-2 bg-white text-lime-500 mt-2 shadow-md shadow-slate-500 w-fit px-5 rounded-md"> AddMoney</button>
+        <button id="cashOutbtn" class="py-2 bg-white text-lime-500 mt-2 shadow-md shadow-slate-500 w-fit px-5 rounded-md"> CashoutMoney</button>
     </section>
 
-<section id="addMoney-box">
+<section id="addMoney-box" class=" ml-8 mt-4">
     <div>
-        <h1> $ <span id="mail-blance">5000</span></h1>
+        <h1 class="text-[green] font-semibold mb-2 ml-10">Current Balance: $ <span id="mail-blance">5000</span></h1>
     </div>
-    <p class="text-xs mb-4"> Type you Account Number </p>
+    <p class=" text-lime-500 ml-1">  Account Number </p>
 
-    <input  value="01822471251" id="Account" type="number" placeholder=" Account ">
+    <input class="text-gray-400 text-xs mb-2 "   id="Account" type="number" placeholder=" Account ">
 
-    <p>Type Your pin </p>
+    <p class=" text-lime-500 ml-1"> Your Pin </p>
 
-    <input value="1234"  id="myPin" type="text" placeholder=" Pin "> 
+    <input class="text-xs mb-4"   id="myPin" type="text" placeholder=" Enter Your Pin "> 
     
 
-    <p>Add your money </p>
-    <input class="mb-2"  id="amount" type="text" placeholder=" Account ">
+    <p class=" text-lime-500 ml-1">Add Your money </p>
+    <input  class="text-gray-400 text-xs mb-2 "  id="amount" type="text" placeholder=" Account ">
     <br/>
 
-    <button  id="AddMoney"> addMoney </button>
+    <button class="py-2 bg-white text-lime-500 mt-2 shadow-md shadow-slate-500 w-fit px-10 rounded-md" id="AddMoney"> Deposit </button>
 </section>
 
 
-<section id="cashOut-box">
-    <p>cashout Your Money</p>
+<section id="cashOut-box" class=" ml-8 mt-4">
+    
     <div>
-        <h1> $ <span id="main-blance2">5000</span></h1>
+        <h1 class="text-[green] font-semibold mb-2 ml-10"> Current Balance: $ <span id="main-blance2">5000</span></h1>
     </div>
-    <p class="text-xs mb-4"> Type you Account Number </p>
-
-    <input  value="01822471251" id="Account" type="number" placeholder=" Account ">
-
-    <p>Type Your pin </p>
-
-    <input value="1234"  id="myPin" type="text" placeholder=" Pin "> 
     
 
-    <p>Amount</p>
-    <input class="mb-2"  id="cash-Amount" type="text" placeholder=" Account ">
+    <p class=" text-lime-500 ml-1"> Account Number </p>
+
+    <input class="text-gray-400 text-xs mb-2 "   id="Account" type="number" placeholder=" Account ">
+
+    <p class=" text-lime-500 ml-1">Your Pin </p>
+
+    <input class="text-gray-400 text-xs mb-2 "   id="myPin" type="text" placeholder=" Pin "> 
+    
+
+    <p class=" text-lime-500 ml-1"> Cashout Amount</p>
+
+    <input class="text-gray-400 text-xs mb-2 "  id="cash-Amount" type="text" placeholder=" Account ">
     <br/>
 
-    <button  id="cashOut">Cash Out Money </button>
+    <button class="py-2 bg-white text-lime-500 mt-2 shadow-md shadow-slate-500 w-fit px-8 rounded-md"  id="cashOut">Cash Out Money </button>
 </section>
 
    

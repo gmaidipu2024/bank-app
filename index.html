@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bank App</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -12,24 +12,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-<div>
-<section>
-  <p class="text-xs mb-4"> Type you Account Number </p>
 
-  <input  value="01822471251" id="Account" type="number" placeholder=" Account ">
 
-  <p>Type Your pin </p>
+<section class=" ml-5 mt-4">
+  <h2 class="mb-4 text-lime-500 shadow-md shadow-slate-500 w-fit px-2 py-2 rounded-md"> Welcome To Your Bank </h2>
 
-  <input value="1234"  id="myPin" type="text" placeholder=" Pin "> 
+  <p class=" text-lime-500 ml-1" >  Account Number</p>
+
+  <input class="mb-3 text-xs"  id="Account" type="number" placeholder=" Enter Your account ">
+
+  <p class=" text-lime-500 ml-1 ">Your Pin Number </p>
+
+  <input class="text-gray-400 text-xs mb-2 "   id="myPin" type="text" placeholder=" Enter Your Pin "> 
   <br/>
 
-  <button  id="loginButton"> login </button>
+  <button  id="loginButton" class="py-2 bg-white text-lime-500 mt-2 shadow-md shadow-slate-500 w-fit px-12 rounded-md"> Login </button>
 </section>
 
   <script src="account.js"></script>
   <script src="./cashOut.js"></script>
   
 
-</div>
+
 </body>
 </html>
